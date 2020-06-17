@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  roomView.swift
 //  Chatter
 //
 //  Created by DiZenzo on 6/16/20.
@@ -8,14 +8,16 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct roomView: View {
+    var room : room
+    
     var body: some View {
-        Text("Hello, World!")
+        Text(room.id)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct roomView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        roomView(room: firstRooms[0])
     }
 }

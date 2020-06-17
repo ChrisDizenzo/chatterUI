@@ -1,0 +1,31 @@
+[
+    {
+        "id" : "A",
+        "name" : "The Office",
+        "description" : "Watch Party! Open to anyone, come join us watch the best show in history.",
+        "time" : "Wednesday",
+        "chat" : []
+    },
+    {
+        
+        "id" : "B",
+        "name" : "COPS",
+        "description" : "Watch Party! This isn't propaganda we swear.",
+        "time" : "Thursday",
+        "chat" : []
+    },
+    {
+        "id" : "C",
+        "name" : "Vikings vs. Packers",
+        "description" : "Live Vikings chat, who ready to beat them packers!",
+        "time" : "Friday",
+        "chat" : []
+    },
+    {
+        "id" : "D",
+        "name" : "Packers vs. Vikings",
+        "description" : "Live Packers chat, who ready to beat them Vikings!",
+        "time" : "Saturday",
+        "chat" : []
+    }
+]

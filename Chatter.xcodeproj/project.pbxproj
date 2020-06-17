@@ -13,6 +13,13 @@
 		052E871324995EAC00544D24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 052E871224995EAC00544D24 /* Assets.xcassets */; };
 		052E871624995EAC00544D24 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 052E871524995EAC00544D24 /* Preview Assets.xcassets */; };
 		052E871924995EAC00544D24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 052E871724995EAC00544D24 /* LaunchScreen.storyboard */; };
+		052E872124995FE400544D24 /* roomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052E872024995FE400544D24 /* roomView.swift */; };
+		052E87232499601600544D24 /* rooms.json in Resources */ = {isa = PBXBuildFile; fileRef = 052E87222499601600544D24 /* rooms.json */; };
+		052E87252499622500544D24 /* room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052E87242499622500544D24 /* room.swift */; };
+		052E87272499A53F00544D24 /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052E87262499A53F00544D24 /* user.swift */; };
+		052E87292499A5E400544D24 /* message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052E87282499A5E400544D24 /* message.swift */; };
+		052E872C2499ADB200544D24 /* chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052E872B2499ADB200544D24 /* chat.swift */; };
+		052E87332499B45500544D24 /* fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052E87322499B45500544D24 /* fetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		052E871524995EAC00544D24 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		052E871824995EAC00544D24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		052E871A24995EAC00544D24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		052E872024995FE400544D24 /* roomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roomView.swift; sourceTree = "<group>"; };
+		052E87222499601600544D24 /* rooms.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = rooms.json; sourceTree = "<group>"; };
+		052E87242499622500544D24 /* room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = room.swift; sourceTree = "<group>"; };
+		052E87262499A53F00544D24 /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
+		052E87282499A5E400544D24 /* message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = message.swift; sourceTree = "<group>"; };
+		052E872B2499ADB200544D24 /* chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chat.swift; sourceTree = "<group>"; };
+		052E87322499B45500544D24 /* fetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +70,10 @@
 		052E870B24995EAA00544D24 /* Chatter */ = {
 			isa = PBXGroup;
 			children = (
-				052E870C24995EAA00544D24 /* AppDelegate.swift */,
-				052E870E24995EAA00544D24 /* SceneDelegate.swift */,
-				052E871024995EAA00544D24 /* ContentView.swift */,
+				052E872F2499B25000544D24 /* complexStuff */,
+				052E87302499B26300544D24 /* views */,
+				052E87312499B44900544D24 /* helpers */,
+				052E872A2499AD8000544D24 /* dataTypes */,
 				052E871224995EAC00544D24 /* Assets.xcassets */,
 				052E871724995EAC00544D24 /* LaunchScreen.storyboard */,
 				052E871A24995EAC00544D24 /* Info.plist */,
@@ -73,6 +88,44 @@
 				052E871524995EAC00544D24 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		052E872A2499AD8000544D24 /* dataTypes */ = {
+			isa = PBXGroup;
+			children = (
+				052E87242499622500544D24 /* room.swift */,
+				052E872B2499ADB200544D24 /* chat.swift */,
+				052E87262499A53F00544D24 /* user.swift */,
+				052E87282499A5E400544D24 /* message.swift */,
+			);
+			path = dataTypes;
+			sourceTree = "<group>";
+		};
+		052E872F2499B25000544D24 /* complexStuff */ = {
+			isa = PBXGroup;
+			children = (
+				052E870E24995EAA00544D24 /* SceneDelegate.swift */,
+				052E870C24995EAA00544D24 /* AppDelegate.swift */,
+			);
+			path = complexStuff;
+			sourceTree = "<group>";
+		};
+		052E87302499B26300544D24 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				052E872024995FE400544D24 /* roomView.swift */,
+				052E871024995EAA00544D24 /* ContentView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		052E87312499B44900544D24 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				052E87222499601600544D24 /* rooms.json */,
+				052E87322499B45500544D24 /* fetcher.swift */,
+			);
+			path = helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				052E871924995EAC00544D24 /* LaunchScreen.storyboard in Resources */,
+				052E87232499601600544D24 /* rooms.json in Resources */,
 				052E871624995EAC00544D24 /* Preview Assets.xcassets in Resources */,
 				052E871324995EAC00544D24 /* Assets.xcassets in Resources */,
 			);
@@ -146,7 +200,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				052E87292499A5E400544D24 /* message.swift in Sources */,
+				052E87332499B45500544D24 /* fetcher.swift in Sources */,
+				052E87252499622500544D24 /* room.swift in Sources */,
 				052E870D24995EAA00544D24 /* AppDelegate.swift in Sources */,
+				052E87272499A53F00544D24 /* user.swift in Sources */,
+				052E872124995FE400544D24 /* roomView.swift in Sources */,
+				052E872C2499ADB200544D24 /* chat.swift in Sources */,
 				052E870F24995EAA00544D24 /* SceneDelegate.swift in Sources */,
 				052E871124995EAA00544D24 /* ContentView.swift in Sources */,
 			);
